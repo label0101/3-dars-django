@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+
+{% block content %}
+
+{% load static %}
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class=" col-md-2 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-8 col-sm-12">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item">
+                              <a class="nav-link" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{% url 'about-page' %}">About</a>
+                           </li>
+                           <li class="nav-item active">
+                              <a class="nav-link" href="{% url 'skating-page' %}">Skating</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{% url 'shop-page' %}">shop</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{% url 'contact-page' %}">Contact Us</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-md-2">
+                  <ul class="email text_align_right">
+                     <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                     <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end header inner -->
+      <!-- our class -->
+      <div class="class">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>Our Skating Class</h2>
+                     <p>There are many variations of passages of Lorem</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 margi_bottom">
+                  <div class="class_box text_align_center">
+                     <i><img src="{% static 'images/class1.png' %}" alt="#"/></i>
+                     <h3>Skateboard</h3>
+                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations </p>
+                  </div>
+                  <a class="read_more" href="Javascript:void(0)">Read More</a>
+               </div>
+               <div class="col-md-4 margi_bottom">
+                  <div class="class_box blue text_align_center">
+                     <i><img src="{% static 'images/class2.png' %}" alt="#"/></i>
+                     <h3>Skateboard</h3>
+                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations </p>
+                  </div>
+                  <a class="read_more" href="Javascript:void(0)">Read More</a>
+               </div>
+               <div class="col-md-4 margi_bottom">
+                  <div class="class_box text_align_center">
+                     <i><img src="{% static 'images/class3.png' %}" alt="#"/></i>
+                     <h3>Skateboard</h3>
+                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations </p>
+                  </div>
+                  <a class="read_more" href="Javascript:void(0)">Read More</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end our class -->
+      <!--  footer -->
+      {% endblock content %}
